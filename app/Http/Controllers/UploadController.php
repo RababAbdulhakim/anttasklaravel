@@ -57,18 +57,18 @@ public function export() {
           $newval=(array)$val;
       //    print_r($newval);
            $newdata = array(
-                      "time"=> Carbon::createFromTimestamp($newval['time'])->format('d.m.Y'),
-                    "summary"=> $newval['summary'],
-                    "icon"=>$newval['icon'],
-                    "sunriseTime"=>Carbon::createFromTimestamp($newval['sunriseTime'])->format('d.m.Y'),
-                    "sunsetTime"=>Carbon::createFromTimestamp( $newval['sunsetTime'])->format('d.m.Y'),
-                    "temperatureMin"=>$newval['temperatureMin'],
-                    "temperatureMinTime"=>Carbon::createFromTimestamp( $newval['temperatureMinTime'])->format('d.m.Y'),
-                    "temperatureMax"=>$newval['temperatureMax'],
-                    "temperatureMaxTime"=>Carbon::createFromTimestamp($newval['temperatureMaxTime'])->format('d.m.Y'),
+                      "time"=> "time: ".Carbon::createFromTimestamp($newval['time'])->format('d.m.Y'),
+                    "summary"=>"summary: ". $newval['summary'],
+                    "icon"=>"icon: ".$newval['icon'],
+                    "sunriseTime"=>"sunrise Time: ".Carbon::createFromTimestamp($newval['sunriseTime'])->format('d.m.Y'),
+                    "sunsetTime"=>"sunset Time: ".Carbon::createFromTimestamp( $newval['sunsetTime'])->format('d.m.Y'),
+                    "temperatureMin"=> "temperature Min: ".$newval['temperatureMin'],
+                    "temperatureMinTime"=>"temperature Min Time:".Carbon::createFromTimestamp( $newval['temperatureMinTime'])->format('d.m.Y'),
+                    "temperatureMax"=>"temperature Max: ".$newval['temperatureMax'],
+                    "temperatureMaxTime"=>"temperature Max Time: ".Carbon::createFromTimestamp($newval['temperatureMaxTime'])->format('d.m.Y'),
            );
-         $string = implode(" ", (array)$newdata); 
-          $keys = implode("", array_keys($newdata)); 
+         $string = implode("   ", (array)$newdata); 
+         
          
            $dd= array(
                
@@ -83,7 +83,7 @@ public function export() {
         
         $excel->sheet('mySheet', function($sheet) use ($dd)
         {
-            $headings = array_keys($dd);
+            $headings = ["day_id" , "summary" , "table" , "data"];
 
 
             $sheet->fromArray($dd);
@@ -93,8 +93,7 @@ public function export() {
        
        }
     }
-  
-    
+     
 }
 
 public function destroy($id) {
