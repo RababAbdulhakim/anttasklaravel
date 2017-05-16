@@ -1,0 +1,78 @@
+{
+    "daily": {
+    
+        "day-1":{
+            "summary": "1No precipitation for the week; temperatures rising to 12° on Saturday .",
+            "table": "weather",
+            "data": [
+                {
+                    "time": 1383458345,
+                    "summary": "Mostly cloudy throughout the day.",
+                    "icon": "partly-cloudy-day",
+                    "sunriseTime": 1383458345,
+                    "sunsetTime": 1335236978,
+                    "temperatureMin": 12,
+                    "temperatureMinTime": 1383544800,
+                    "temperatureMax": 17,
+                    "temperatureMaxTime": 1383458400
+                }
+            ]
+
+    },
+    "day-2":{
+            "summary": "2No precipitation for the week; temperatures rising to 12° on Saturday .",
+            "table": "weather",
+            "data": [
+                {
+                    "time": 1383458345,
+                    "summary": "Mostly cloudy throughout the day.",
+                    "icon": "partly-cloudy-day",
+                    "sunriseTime": 1383458345,
+                    "sunsetTime": 1335236978,
+                    "temperatureMin": 12,
+                    "temperatureMinTime": 1383544800,
+                    "temperatureMax": 17,
+                    "temperatureMaxTime": 1383458400
+                }
+            ]
+
+    },
+     "day-3":{
+            "summary": "3No precipitation for the week; temperatures rising to 12° on Saturday .",
+            "table": "weather",
+            "data": [
+                {
+                    "time": 1383458345,
+                    "summary": "Mostly cloudy throughout the day.",
+                    "icon": "partly-cloudy-day",
+                    "sunriseTime": 1383458345,
+                    "sunsetTime": 1335236978,
+                    "temperatureMin": 12,
+                    "temperatureMinTime": 1383544800,
+                    "temperatureMax": 17,
+                    "temperatureMaxTime": 1383458400
+                }
+            ]
+
+    },
+     "day-4":{
+            "summary": "4No precipitation for the week; temperatures rising to 12° on Saturday .",
+            "table": "weather",
+            "data": [
+                {
+                    "time": 1383458345,
+                    "summary": "Mostly cloudy throughout the day.",
+                    "icon": "partly-cloudy-day",
+                    "sunriseTime": 1383458345,
+                    "sunsetTime": 1335236978,
+                    "temperatureMin": 12,
+                    "temperatureMinTime": 1383544800,
+                    "temperatureMax": 17,
+                    "temperatureMaxTime": 1383458400
+                }
+            ]
+
+    }
+
+}
+}
